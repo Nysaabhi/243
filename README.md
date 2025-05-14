@@ -27480,7 +27480,7 @@ function addChatSupportStyles() {
 
 /* Responsive Font Sizing */
 @media (min-width: 375px) {
-  .chat-support-header h2 { font-size: 1rem; }
+  .chat-support-header h2 { font-size: 1.1rem; }
 }
 
 @media (min-width: 480px) {
@@ -27698,13 +27698,19 @@ function addChatSupportStyles() {
   font-size: 1.1rem;
 }
 
+.contact-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
 .contact-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   padding: 12px 20px;
-  margin: 8px;
   background: rgba(255, 215, 0, 0.1);
   border-radius: 8px;
   color: var(--primary-color);
@@ -27712,6 +27718,8 @@ function addChatSupportStyles() {
   font-size: 0.95rem;
   transition: all 0.2s ease;
   border: 1px solid rgba(255, 215, 0, 0.2);
+  flex: 1 0 auto;
+  min-width: 120px;
 }
 
 .contact-button:hover {
@@ -27747,6 +27755,11 @@ function addChatSupportStyles() {
   .contact-button {
     padding: 10px 16px;
     font-size: 0.9rem;
+    min-width: 100px;
+  }
+  
+  .contact-buttons-container {
+    gap: 6px;
   }
 }
 
